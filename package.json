@@ -2,6 +2,14 @@
   "name": "gatsby-starter-typescript-scss-modules",
   "version": "0.0.0",
   "description": "A no-fluff, minimal Gatsby starter with a clear separation of concerns.",
+  "scripts": {
+    "dev": "npm run develop",
+    "develop": "gatsby develop --https",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
   "dependencies": {
     "@types/react-helmet": "^5.0.8",
     "gatsby": "^2.0.85",

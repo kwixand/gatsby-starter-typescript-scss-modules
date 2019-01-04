@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  min-height: 100vh;
+
+  #___gatsby {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-flow: column;
+
+    > div[role='group'] {
+      display: flex;
+      flex: 1;
+      flex-flow: column;
+
+      #content {
+        flex: 1;
+      }
+    }
+  }
+}

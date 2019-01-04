@@ -9,7 +9,6 @@ const LayoutQuery = graphql`
       siteMetadata {
         title
         description
-        keywords
       }
     }
   }
@@ -40,10 +39,6 @@ const Layout: React.FunctionComponent<ILayoutComponentProps> = ({
           <meta
             name="description"
             content={data.site.siteMetadata.description}
-          />
-          <meta
-            name="keywords"
-            content={data.site.siteMetadata.keywords.join(', ')}
           />
         </Helmet>
         <div id="content" {...props}>

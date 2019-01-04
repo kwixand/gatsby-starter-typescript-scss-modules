@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     title: 'gatsby-starter-typescript-scss-modules',
     description: '',
-    keywords: [],
     copyright: {
       year: new Date().getFullYear(),
       text: '',

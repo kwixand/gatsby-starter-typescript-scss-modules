@@ -2,6 +2,7 @@
   "name": "gatsby-starter-typescript-scss-modules",
   "version": "0.0.0",
   "description": "A no-fluff, minimal Gatsby starter with a clear separation of concerns.",
+  "license": "MIT",
   "scripts": {
     "dev": "npm run develop",
     "develop": "gatsby develop --https",

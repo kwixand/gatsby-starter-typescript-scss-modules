@@ -1,3 +1,6 @@
+const autoprefixer = require('autoprefixer')
+const browserslist = require('browserslist')
+
 module.exports = {
   siteMetadata: {
     title: 'gatsby-starter-typescript-scss-modules',

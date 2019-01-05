@@ -20,6 +20,8 @@
   "dependencies": {
     "@types/classnames": "^2.2.7",
     "@types/react-helmet": "^5.0.8",
+    "autoprefixer": "^9.4.4",
+    "browserslist": "^4.3.7",
     "classnames": "^2.2.6",
     "gatsby": "^2.0.85",
     "gatsby-plugin-react-helmet": "^3.0.5",

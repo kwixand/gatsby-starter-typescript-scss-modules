@@ -1,9 +1,29 @@
-workflow "Publish to NPM on push" {
+workflow "Build, Test, and Publish" {
   on = "push"
-  resolves = ["GitHub Action for npm"]
+  resolves = ["Publish"]
 }
 
-action "GitHub Action for npm" {
-  uses = "actions/npm@e7aaefe"
-  runs = "npm publish"
+action "Build" {
+  uses = "actions/npm@master"
+  args = "install"
+}
+
+action "Test" {
+  needs = "Build"
+  uses = "actions/npm@master"
+  args = "test"
+}
+
+# Filter for a new tag
+action "Tag" {
+  needs = "Test"
+  uses = "actions/bin/filter@master"
+  args = "tag"
+}
+
+action "Publish" {
+  needs = "Tag"
+  uses = "actions/npm@master"
+  args = "publish --access public"
+  secrets = ["NPM_TOKEN"]
 }

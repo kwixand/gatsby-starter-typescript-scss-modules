@@ -13,7 +13,7 @@ const Card: React.FunctionComponent<ICardComponentProps> = ({
   className,
   ...props
 }) => (
-  <section className={classNames([styles.Card, className])} {...props}>
+  <section className={classNames([styles.Card_section, className])} {...props}>
     {children}
   </section>
 )

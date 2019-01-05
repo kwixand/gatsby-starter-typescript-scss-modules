@@ -16,10 +16,9 @@ const Card: React.FunctionComponent<ICardComponentProps> = ({
   content,
   ...props
 }) => (
-  <section className={classNames([styles.Card_section, className])} {...props}>
-    {content}
+  <header className={classNames([styles.Card_title, className])} {...props}>
     {children}
-  </section>
+  </header>
 )
 
 export default Card

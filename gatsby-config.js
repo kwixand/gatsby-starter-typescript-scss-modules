@@ -9,7 +9,15 @@ module.exports = {
   },
   plugins: [
     { resolve: `gatsby-plugin-react-helmet` },
-    { resolve: `gatsby-plugin-sass` },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          localIdentName: '[hash:base64:5]',
+        },
+        postCssPlugins: [autoprefixer({ browsers: browserslist() })],
+      },
+    },
     { resolve: `gatsby-plugin-typescript` },
   ],
 }

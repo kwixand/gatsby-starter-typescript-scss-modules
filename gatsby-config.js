@@ -4,7 +4,8 @@ const browserslist = require('browserslist')
 module.exports = {
   siteMetadata: {
     title: 'gatsby-starter-typescript-scss-modules',
-    description: '',
+    description:
+      'A no-fluff, minimal Gatsby starter with a clear separation of concerns.',
     copyright: {
       year: new Date().getFullYear(),
       text: '',

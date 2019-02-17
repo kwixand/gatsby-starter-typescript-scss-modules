@@ -2,7 +2,7 @@
 
 Install
 ```bash
-gatsby new SITE_NAME https://github.com/pqt/gatsby-starter-typescript-scss-modules
+gatsby new SITE_NAME https://github.com/kwixand/gatsby-starter-typescript-scss-modules
 ```
 
 ### Features
